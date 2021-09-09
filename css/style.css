@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* .home-body{
+    background-image: url(/img/butterfliesbackground.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+/* SHOWCASE */
+.showcase{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: white; */
+    background: url(/img/cleanbutterfly.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-attachment:fixed; */
+    /* color: white; */
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.showcase.active{
+    right: 300px;
+}
+
+.showcase header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    position: relative;
+    right: 80px;
+    filter: invert(1);
+}
+
+/* TOGGLE */
+.toggle{
+    position: relative;
+    height: 60px;
+    width: 60px;
+    background: url(/img/menubutton.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+.toggle.active{
+    background: url(/img/icons8-multiply-50.png);
+    background-repeat: no-repeat;
+    background-size: 40px;
+    background-position: center;
+    cursor: pointer;
+    filter: invert(1);
+}
+
+/* TEXT */
+.text{
+    position: relative;
+    z-index: 10;
+    margin-top: 100px;
+    /* padding-right: 30px; */
+    bottom: 50px;
+}
+
+.text h2{
+    font-size: 3em;
+    padding: 0px 30px;
+    margin-top: 150px;
+    font-weight: 700;
+    line-height: 1em;
+    text-transform: uppercase;
+}
+
+.text p{
+    font-size: 1.1em;
+    font-weight: 700;
+    margin: 20px 0;
+    padding: 30px;
+    font-weight: 400;
+    width: 60%;
+}
+
+.text a{
+    display: inline-block;
+    font-size: 1em;
+    background: none;
+    border: 1px solid black;
+    padding: 10px 30px;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+
+.text a:hover{
+    transform: scale(0.9);
+}
+
+
+/* SOCIALS */
+.socials{
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    z-index: 10;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    filter: invert(1);
+}
+
+.socials li{
+    list-style: none;
+}
+
+.socials li a{
+    display: inline-block;
+    color: black;
+    margin-right: 40px;
+    transform: scale(1);
+    transition: 0.2s;
+}
+
+.socials li a:hover{
+    transform: translateY(-10px)
+}
+
+
+/* MENU */
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(26, 26, 26);
+}
+
+.menu ul{
+    position: relative;
+    list-style: none;
+}
+
+.menu ul li a{
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: lowercase;
+    font-size: 30px;
+    color: white;
+    line-height: 3em;
+    letter-spacing: 3px;
+}
+
+.menu ul li a:hover{
+    border-bottom: 1px solid white;
+}
+
+
+/* ==============ALL OTHER WEBPAGES============== */
+
+#webpages{
+    background-image: url(/img/cleanbutterfly.jpeg);
+    background-attachment: fixed;
+    /* background-position: center; */
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    margin-top: 200px;
+    padding: auto 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ==============================SERVICES PAGE ===============================*/
+
+.services h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.services h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.service-box{
+    border-bottom: black 3px solid;
+    width: 70%;
+    padding: 0;
+    margin: 30px auto;
+}
+
+.service-box h3{
+    margin: 20px 0;
+}
+
+.service-box img{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.cost{
+    display: inline-block;
+    background-color: rgba(143, 135, 135, 0.2);
+    padding: 5px;
+}
+
+.top{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 30px;
+}
+
+
+/* ==============================GALLERY=============================== */
+
+.gallery h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel{
+    padding: 50px;
+    margin: 10px;
+}
+
+.carousel-item{
+    padding-left: 35%;
+}
+
+
+/* =================================CONTACT PAGE========================== */
+
+.contact h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact.container{
+    margin-top: 0px;
+}
+
+button{
+    padding: 5px 10px;
+}
+/* ==================================ABOUT PAGE================================ */
+
+.about h2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.missionstatement{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.missionstatement div{
+    padding: 40px;
+    margin: auto;
+}
+
+
+
+
+/* ===================================MEDIA QUERIES =========================*/
+
+@media all and (max-width: 600px){
+
+    .showcase{
+        background-image: url(/img/cleanbutterfly.jpeg);
+        background-attachment: fixed;
+        background-position: right;
+        background-size: 700px 1000px;
+        background-repeat: no-repeat;
+    }
+
+    .showcase header{
+        position: absolute;
+        top: 0;
+        left: 60px;
+        width: 100%;
+        padding: 20px 70px 0px 30px;
+        margin: 0px 50px 0px 0px;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    img{
+        position: relative;
+        max-width: 200px;
+    }
+
+    .text h2{
+        font-size: 2.5em;
+        margin-top: 40px;
+    }
+
+
+    .text p{
+        font-size: 1em;
+        width: 95%;
+    }
+
+    .services h3{
+        font-size: 0.8rem;
+    }
+
+    #webpages{
+        background-image: url(/img/cleanbutterfly.jpeg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .gallery.container{
+        margin-top: 0px;
+    }
+
+    .carousel{
+        padding: 20px;
+        margin: 10px;
+        width: 400px;
+    }
+
+    .carousel-item{
+        padding: 50px;
+    }
+
+    .missionstatement{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 40px;
+    }
+
+    .missionstatement div{
+        padding: 20px;
+        margin: 0px;
+
+
+    
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
